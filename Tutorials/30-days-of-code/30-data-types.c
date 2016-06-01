@@ -1,3 +1,4 @@
+/* https://www.hackerrank.com/challenges/30-data-types */
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

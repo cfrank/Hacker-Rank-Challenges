@@ -1,24 +1,16 @@
-#include <math.h>
+/* https://www.hackerrank.com/challenges/30-hello-world */
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <stdbool.h>
-
 int main()
 {
-    int array_length; 
-    scanf("%d",&array_length);
-
-    int arr[array_length];
-    long long int result = 0;
-
-    for(unsigned int i = 0; i < array_length; i++){
-       scanf("%d",&arr[i]);
-       result += arr[i];
-    }
+    char hello_string[] = "Hello, World.";
+    char *input_string = malloc(201);
+    fgets(input_string, 200, stdin);
     
-    printf("%lld", result);
-    return 0;
+    printf("%s\n", hello_string);
+    printf("%s", input_string);
+    
+    free(input_string);
 }
