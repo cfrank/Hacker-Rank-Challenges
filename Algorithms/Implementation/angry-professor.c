@@ -32,7 +32,8 @@ int main()
     return 0;
 }
 
-bool class_canceled(int arrival_times[], int threshold, int students){
+bool class_canceled(int arrival_times[], int threshold, int students)
+{
     int arrived;
     
     for(int i = 0; i < students; ++i){
